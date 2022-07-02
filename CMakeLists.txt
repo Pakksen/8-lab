@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(PolishNotation)
+add_library(polish polish.cpp)
+add_subdirectory(tests)
+add_executable(main main.cpp)
+target_link_libraries(main polish)
